@@ -1,128 +1,42 @@
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: Arial, sans-serif;
-    height: 100vh;
-}
-.container {
-    display: flex;
-    height: 100vh;
-}
-.form-section {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 40px;
-    background-color: #fff3da;
-}
-
-.form-section h2 {
-    margin-bottom: 8px;
-}
-
-.form-section p {
-    margin-bottom: 24px;
-    color: #666;
-    font-size: 14px;
-}
-label {
-    display: block;
-    margin-bottom: 6px;
-    font-weight: bold;
-    font-size: 14px;
-    color: #333;
-}
-
-input {
-    width: 100%;
-    padding: 12px;
-    margin-bottom: 16px;
-    border: 1px solid #ccc;
-    border-radius: 6px;
-    font-size: 14px;
-    display: block;
-}
-
-.baris-bawah {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;           
-    margin-bottom: 20px;
-    font-size: 14px;
-}
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UTS WEB LOGIN</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
 
-.checkbox-label {
-    font-weight: normal;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    gap: 6px; 
-}
+    <div class="container">
+         <div class="image-section">
+        </div>
+        <div class="form-section">
+            <h2>Selamat Datang!</h2>
+            <p>Silakan masukkan akun Anda untuk lanjut.</p>
 
-.checkbox-label input {
-    width: auto;
-    margin-bottom: 0;
-}
+            <form>
+                <label>Email / Username</label>
+                <input type="text" placeholder="Masukkan email/username...">
 
-.forgot-link {
-    color: #ff0080;
-    text-decoration: none;
-}
+                <label>Password</label>
+                <input type="password" placeholder="Masukkan password...">
 
-.forgot-link:hover {
-    text-decoration: underline;
-}
-
-button {
-    width: 100%;
-    padding: 12px;
-    border-radius: 6px;
-    font-size: 16px;
-    cursor: pointer;
-    border: none;
-    margin-bottom: 10px;
-}
-
-button:nth-of-type(1) {
-    background-color: #ff4fa4;
-    color: white;
-}
-
-button:nth-of-type(1):hover {
-    background-color: #ff4fa4;
-}
-
-
-button:nth-of-type(2) {
-    background-color:  #fddb93;
-    color: #333;
-    border: 1px solid  #ffecc3;
-}
-
-button:nth-of-type(2):hover {
-    background-color: #e2e2e2;
-}
-
-
-.image-section {
-    flex: 1;
-    background: url('image.png') center/cover no-repeat;
-}
-
-/* --- RESPONSIF UNTUK HP --- */
-@media (max-width: 768px) {
-    .container {
-        flex-direction: column; /* Mengubah posisi jadi atas-bawah di HP */
-    }
+                <div class="baris-bawah">
+                 <label class="checkbox-label">
+                 <input type="checkbox" name="remember"> Remember Me
+                 </label>
     
-    .image-section {
-        display: none; /* Menyembunyikan gambar di HP agar fokus ke form */
-    }
-}
+                 <a href="#" class="forgot-link">Forgot Password?</a>
+                </div>
+
+                <button class="but1" type="submit">Sign In</button>
+                <button class="but2" type="submit">Sign in with SSO</button>
+            </form>
+        </div>
+
+    </div>
+
+</body>
+</html>
